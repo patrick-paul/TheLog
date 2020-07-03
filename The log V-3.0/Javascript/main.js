@@ -4,7 +4,7 @@ var sign = new Array("+", "-", "*", "/");
 var tagsFile = [
   '<div id="oneType" value="' + sign[din] + '">' + sign[din] + "</div>",
   '<label>Log</label> <sub id="swash"><input type="text" id="a" onkeyup="swift(); unCheck_calc();" maxlength="3" placeholder="base" onmouseover="this.placeholder=\'\'" onmouseout="if(this.value == \'\'){this.placeholder=\'base\'}" autocomplete="off" /></sub>',
-  '<input type="text" id="b" onkeyup="swift(); unCheck_calc();" maxlength="5" placeholder="" autocomplete="off" />',
+  '<input type="text" id="b" onkeyup="swift(); unCheck_calc();" maxlength="7" placeholder="" autocomplete="off" />',
 ];
 var insc = document.getElementById("modeTwo");
 var insd = document.getElementById("cleanSize");
@@ -34,7 +34,7 @@ var width;
 var mong;
 var final;
 
-// "remove Module" & X Base Constant Button & "resert Module" & "Calculate" & "Clean Constant(s)"  & "Copy"button's disability code
+// "remove Module" & "X Base Constant" Button & "resert Module" & "Calculate" & "Clean Constant(s)"  & "Copy"button's disability code
 document.getElementById("modeTwo").disabled = true;
 document.getElementById("base_cleaner").disabled = true;
 document.getElementById("cleanSize").disabled = true;
@@ -504,7 +504,7 @@ function swift() {
             insd.style.height = 58 + "px";
             insd.style.cursor = "pointer";
           });
-  
+
         document
           .getElementById("cleanSize")
           .removeEventListener("mouseout", function () {
@@ -744,7 +744,7 @@ function hoverAge(event) {
           sign[din] +
           "</div></div>",
         '<label>Log</label> <sub id="swash"><input type="text" id="a" onkeyup="swift(); unCheck_calc();" spellcheck="false" maxlength="3" onmouseover="this.placeholder=\'\'" onmouseout="if(this.value == \'\'){this.placeholder=\'base\'}" autocomplete="off" placeholder="base" /></sub>',
-        '<input type="text" id="b" spellcheck="false" onkeyup="swift(); unCheck_calc();" maxlength="5" autocomplete="off" placeholder="" />',
+        '<input type="text" id="b" spellcheck="false" onkeyup="swift(); unCheck_calc();" maxlength="7" autocomplete="off" placeholder="" />',
       ];
       document.getElementById("subTheme").innerHTML =
         tagsFile[0] + tagsFile[1] + tagsFile[2];
@@ -758,7 +758,7 @@ function hoverAge(event) {
           sign[din] +
           "</div></div>",
         '<label>Log</label> <sub id="swash"><input type="text" id="a" spellcheck="false" placeholder="base" onmouseout="if(this.value == \'\'){this.placeholder=\'base\'}" onkeyup="swift(); unCheck_calc();" maxlength="3" onmouseover="this.placeholder=\'\'" autocomplete="off" /></sub>',
-        '<input type="text" id="b" placeholder="" maxlength="5" spellcheck="false" onkeyup="swift(); unCheck_calc();" autocomplete="off" />',
+        '<input type="text" id="b" placeholder="" maxlength="7" spellcheck="false" onkeyup="swift(); unCheck_calc();" autocomplete="off" />',
       ];
       document.getElementById("subTheme").innerHTML =
         tagsFile[0] + tagsFile[1] + tagsFile[2];
@@ -772,7 +772,7 @@ function hoverAge(event) {
           sign[din] +
           "</div></div>",
         '<label>Log</label> <sub id="swash"><input type="text" id="a" spellcheck="false" placeholder="base" onmouseover="this.placeholder=\'\'" onmouseout="if(this.value == \'\'){this.placeholder=\'base\'}" onkeyup="swift(); unCheck_calc();" maxlength="3" autocomplete="off" /></sub>',
-        '<input type="text" id="b" placeholder="" maxlength="5" spellcheck="false" onkeyup="swift(); unCheck_calc();" autocomplete="off" />',
+        '<input type="text" id="b" placeholder="" maxlength="7" spellcheck="false" onkeyup="swift(); unCheck_calc();" autocomplete="off" />',
       ];
       document.getElementById("subTheme").innerHTML =
         tagsFile[0] + tagsFile[1] + tagsFile[2];
@@ -786,7 +786,7 @@ function hoverAge(event) {
           sign[din] +
           "</div></div>",
         '<label>Log</label> <sub id="swash"><input type="text" id="a" spellcheck="false" placeholder="base" onmouseover="this.placeholder=\'\'" onmouseout="if(this.value == \'\'){this.placeholder=\'base\'}" onkeyup="swift(); unCheck_calc();" autocomplete="off" maxlength="3"  /></sub>',
-        '<input type="text" id="b" placeholder="" spellcheck="false" onkeyup="swift(); unCheck_calc();" maxlength="5" autocomplete="off"/>',
+        '<input type="text" id="b" placeholder="" spellcheck="false" onkeyup="swift(); unCheck_calc();" maxlength="7" autocomplete="off"/>',
       ];
       document.getElementById("subTheme").innerHTML =
         tagsFile[0] + tagsFile[1] + tagsFile[2];
@@ -851,6 +851,27 @@ function hoverAge(event) {
 
 function removeModule() {
   if (ping_Pong != 0) {
+    if (
+      document.getElementById("melo").innerHTML != 10 &&
+      document.getElementById("melo").innerHTML != 2.72
+    ) {
+      document
+        .getElementById("base_cleaner")
+        .removeEventListener("mouseout", function () {
+          delBase.style.transition = 0.5 + "s";
+          delBase.style.backgroundColor = "#" + "0bc9c9";
+          delBase.style.width = 14 + "%";
+          delBase.style.height = 50 + "px";
+        });
+
+      delBase.style.transition = 0.5 + "s";
+      delBase.style.backgroundColor = "#" + "0bc9c9";
+      delBase.style.borderRadius = 5 + "px";
+      delBase.style.width = 14 + "%";
+      delBase.style.height = 50 + "px";
+      delBase.disabled = true;
+      delBase.style.opacity = 0.3;
+    }
     document.getElementById("subTheme").innerHTML = "";
     ford = 0;
     ping_Pong = 0;
