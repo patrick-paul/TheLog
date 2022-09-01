@@ -1,0 +1,158 @@
+<!--
+///////////////////////////////////////////////////////////////////////////////////////
+      This Project (The Log) Is Made by Programmer Patrick Paul....
+      And all codes are written under a carefull super-version by him..... 
+      By no means one or group of two or more is allowed to Copy/interfere with 
+      the codes at anyhow with out the permission from the Programmer #Patrick Paul.... 
+      If codes found stolen Serious measures wil be taken upon the Thief(s)...
+      For Contacts email The Programmer (Patrick Paul) at :- patrickpaul367@gmail.com or
+                                                             patrickshao367@gmail.com
+                          THANK YOU FOR READING..... :)
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css\log.css" />
+    <title>Log Calculator!</title>
+  </head>
+
+  <body id="body">
+    <div id="all">
+      <div id="collector">
+        <div id="beggin_world">
+          <img
+            src="icons/start.png"
+            title="Let's Beggin"
+            onclick="document.getElementById('beggin_world').style.display = 'none'"
+            class="beggin"
+          />
+        </div>
+        <div id="controlPanel">
+          <span>Control Panel</span>
+          <button onclick="addModule()" id="modeOne">+ Module</button>
+          <button onclick="removeModule()" id="modeTwo">x Module</button>
+          <button onclick="sudic()" id="sudo">+ Const(s)</button>
+          <button onclick="takeOut();" id="base_cleaner">x Const(s)</button>
+          <button onclick="calorado++; resertModule();" id="cleanSize">
+            Clean
+          </button>
+          <button onclick="window.open('log.html' , '_self')" id="restart">
+            Turn Off
+          </button>
+        </div>
+        <div id="logos">
+          <img src="icons/logo.png" class="logo" />
+          <br />
+          <span>TheLog</span>
+        </div>
+        <div class="mean">
+          <label>Log</label>
+          <sub id="melo">
+            <input
+              type="text"
+              id="x"
+              onkeyup="swift(); unCheck_calc();"
+              placeholder="base"
+              onmouseover="this.placeholder=''"
+              onmouseout="if(this.value == ''){this.placeholder='base'}"
+              maxlength="3"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </sub>
+          <input
+            type="text"
+            id="y"
+            onkeyup="swift(); unCheck_calc();"
+            placeholder=""
+            maxlength="7"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <span id="subTheme"></span>
+          <br />
+          <br />
+          <div>
+            <input type="button" id="calc" value="Calculate" />
+          </div>
+          <br />
+          <br />
+          <br />
+          <fieldset id="results">
+            <legend>Answer</legend>
+            <span id="model"></span>
+          </fieldset>
+          <button class="ding" id="copy">Copy</button>
+        </div>
+
+        <div class="container">
+          <div class="neural">
+            <span class="legend">Info Box</span>
+          </div>
+          <span id="takeInfo"></span>
+        </div>
+        <div class="containerLoder" id="colapa">
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+        </div>
+        <div id="cover"></div>
+        <div id="myProgress">
+          <span id="realTime">Progress Bar (Inactive)</span>
+          <div class="followUp">
+            <div id="myBar"></div>
+          </div>
+        </div>
+        <div id="cont">
+          <button onclick="backGround()" id="background">Background</button>
+        </div>
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+          <div>
+            <div id="dialogboxhead"></div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxfoot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="displayer">
+        <p>
+          Oooh! It Looks Like You Have A smaller display Screen!!!
+          <br />
+          This Software works only in 15.6 Inch Screen and Above!!!
+          <br />
+          Sorry... :(
+          <br />
+          <br />
+          NOTE:
+          <br />
+          If Your Screen Is 15.6 Inch Or Above And Your Getting This Error....
+          <br />
+          Try To Maximaize Your Windows!!!
+          <br />
+          Or Resize It By Icreasing Its Size In Both Height & Width!!!
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="javascript\main.js"></script>
+  </body>
+</html>
